@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet - El Túnel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="intranet.css">
+</head>
+<body>
+  <header class="navbar">
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Sucursal</a></li>
+                 <li><a href="intranet.html">Intranet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Pantalla de Login (Simulada) -->
+    <div id="login-screen" class="login-container">
+        <div class="login-box">
+            <h2>Acceso a Intranet</h2>
+            <p>Solo personal autorizado</p>
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button onclick="simularLogin()" class="btn-primary">Entrar</button>
+            <p id="login-error" style="color: red; display: none; margin-top: 10px;">Usuario o contraseña incorrectos.</p>
+        </div>
+    </div>
+
+    <!-- Panel de Control (Oculto hasta hacer login) -->
+    <div id="dashboard-screen" style="display: none;">
+        
+        <header class="navbar intranet-nav">
+            <h2>Panel de Administración - El Túnel</h2>
+            <button onclick="cerrarSesion()" class="btn-logout">Cerrar Sesión</button>
+        </header>
+
+        <!-- Noticias en Scroll Horizontal -->
+        <div class="noticias-bar">
+            <span class="badge-noticia">ÚLTIMA HORA</span>
+            <div class="scroll-noticias">
+                <p>📢 Reunión de inventario este viernes a las 8:00 AM. | 🎂 ¡Feliz cumpleaños a María del turno vespertino! | 📦 Han llegado 50 nuevos ejemplares de "Rayuela".</p>
+            </div>
+        </div>
+
+        <main class="dashboard-grid container">
+            
+            <!-- Columna Izquierda: Gestión de Libros y Reportes -->
+            <div class="columna-principal">
+                
+                <!-- Agregar Libros -->
+                <section class="admin-card">
+                    <h3>➕ Agregar Nuevo Libro al Scroll</h3>
+                    <form id="add-book-form" class="form-grid">
+                        <input type="text" id="book-title" placeholder="Título del libro" required>
+                        <input type="text" id="book-author" placeholder="Autor" required>
+                        <input type="number" id="book-price" placeholder="Precio ($)" required>
+                        <button type="submit" class="btn-primary">Agregar al Catálogo</button>
+                    </form>
+                </section>
+
+                <!-- Borrar Libros -->
+                <section class="admin-card mt-20">
+                    <h3>🗑️ Eliminar Libros</h3>
+                    <ul id="lista-libros-admin" class="lista-admin">
+                        <li>Fuerte es el silencio <button class="btn-danger" onclick="this.parentElement.remove()">Borrar</button></li>
+                        <li>Rayuela <button class="btn-danger" onclick="this.parentElement.remove()">Borrar</button></li>
+                        <li>La ley de Herodes <button class="btn-danger" onclick="this.parentElement.remove()">Borrar</button></li>
+                    </ul>
+                </section>
+
+                <!-- Reportes de Venta -->
+                <section class="admin-card mt-20">
+                    <h3>📊 Reportes de Venta Diarios</h3>
+                    <p>Genera el corte de caja e inventario del día de hoy.</p>
+                    <button onclick="window.print()" class="btn-secondary">🖨️ Imprimir Reporte de Hoy</button>
+                </section>
+
+            </div>
+
+            <!-- Columna Derecha: Mensajería Interna -->
+            <div class="columna-secundaria">
+                <section class="admin-card chat-box">
+                    <h3>💬 Mensajes Internos</h3>
+                    <div class="mensajes-container" id="chat-mensajes">
+                        <div class="mensaje recibido"><strong>Admin 1:</strong> ¿Alguien revisó los pedidos de ayer?</div>
+                        <div class="mensaje enviado"><strong>Tú:</strong> Sí, ya están empaquetados.</div>
+                    </div>
+                    <form id="chat-form" class="chat-input-area">
+                        <input type="text" id="chat-input" placeholder="Escribe un mensaje..." required>
+                        <button type="submit" class="btn-primary">Enviar</button>
+                    </form>
+                </section>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="intranet.js"></script>
+</body>
+</html>

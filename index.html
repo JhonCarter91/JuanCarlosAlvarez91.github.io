@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Túnel - Librería</title>
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Redes Sociales -->
+    <div class="social-sidebar hidden">
+        <a href="#" class="social-link fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-link x-twitter" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="social-link ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-link wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Menú de Navegación -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Libros</a></li>
+                <li><a href="#">Los más leídos</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Sucursal</a></li>
+                <li><a href="intranet.html" class="highlight-link">Intranet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="hero-content hidden">
+            <h1>...Creando nuevos mundos, historias y recuerdos</h1>
+            <p>"Una aventura en cada libro que leas"</p>
+        </div>
+    </section>
+
+    <!-- Recomendaciones -->
+    <section class="recomendaciones container">
+        <h2 class="section-title hidden">Recomendaciones</h2>
+        <div class="grid-recomendaciones">
+            <div class="card hidden">
+                <img src="imagenes/harrypotterlibro.jpg" alt="Harry Potter" class="book-img">
+                <h3>Harry Potter y la piedra filosofal</h3>
+                <p>J.K. Rowling</p>
+                <button class="btn-primary">Ver más</button>
+            </div>
+            <div class="card hidden" style="transition-delay: 0.1s;">
+                <img src="imagenes/cienañosdesoledad.jpg" alt="Cien años de soledad" class="book-img">
+                <h3>Cien años de soledad</h3>
+                <p>Gabriel García Márquez</p>
+                <button class="btn-primary">Ver más</button>
+            </div>
+            <div class="card hidden" style="transition-delay: 0.2s;">
+                <img src="imagenes/lainsoportablelevedaddelser.jpg" alt="La insoportable levedad del ser" class="book-img">
+                <h3>La insoportable levedad del ser</h3>
+                <p>Milan Kundera</p>
+                <button class="btn-primary">Ver más</button>
+            </div>
+            <div class="card hidden" style="transition-delay: 0.3s;">
+                <img src="imagenes/comoaguaparachocolate.jpg" alt="Como agua para chocolate" class="book-img">
+                <h3>Como agua para chocolate</h3>
+                <p>Laura Esquivel</p>
+                <button class="btn-primary">Ver más</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Libros (Scroll Horizontal) -->
+    <section class="libros container hidden">
+        <div class="libros-header">
+            <h2 class="section-title">Libros</h2>
+            <a href="#" class="link-ver-mas">ver más &rarr;</a>
+        </div>
+        <div class="scroll-container" id="scroll-libros">
+            <div class="card-scroll">
+                <img src="imagenes/fuerteenelsilencio.jpg" alt="Fuerte es el silencio" class="book-img">
+                <h4>Fuerte es el silencio</h4>
+                <p>Elena Poniatowska</p>
+                <span class="price">$450.00</span>
+                <button class="btn-primary btn-sm">COMPRAR</button>
+            </div>
+            <div class="card-scroll">
+                <img src="imagenes/rayuela.jpg" alt="Rayuela" class="book-img">
+                <h4>Rayuela</h4>
+                <p>Julio Cortázar</p>
+                <span class="price">$445.00</span>
+                <button class="btn-primary btn-sm">COMPRAR</button>
+            </div>
+            <div class="card-scroll">
+                <img src="imagenes/lalydeherodes.jpg" alt="La ley de Herodes" class="book-img">
+                <h4>La ley de Herodes</h4>
+                <p>Jorge Ibargüengoitia</p>
+                <span class="price">$150.00</span>
+                <button class="btn-primary btn-sm">COMPRAR</button>
+            </div>
+            <div class="card-scroll">
+                <img src="imagenes/arrancamelavida.jpg" alt="Arráncame la vida" class="book-img">
+                <h4>Arráncame la vida</h4>
+                <p>Ángeles Mastretta</p>
+                <span class="price">$350.00</span>
+                <button class="btn-primary btn-sm">COMPRAR</button>
+            </div>
+             
+             <div class="card-scroll">
+                <img src="imagenes/critica de la razon pura.jpg" alt="Arráncame la vida" class="book-img">
+                <h4>Critica de la Razón pura</h4>
+                <p>Kant</p>
+                <span class="price">$380.00</span>
+                <button class="btn-primary btn-sm">COMPRAR</button>
+            </div>
+             <div class="card-scroll">
+                <img src="imagenes/fenomenologiadelespiritu.jpg" alt="Arráncame la vida" class="book-img">
+                <h4>Fenomenología del espíritu</h4>
+                <p>George Hegel</p>
+                <span class="price">$430.00</span>
+                <button class="btn-primary btn-sm">COMPRAR</button>
+            </div>
+             <div class="card-scroll">
+                <img src="imagenes/discursodelmetodo.jpg" alt="Arráncame la vida" class="book-img">
+                <h4>Discurso del Método</h4>
+                <p>Rene Descartes</p>
+                <span class="price">$350.00</span>
+                <button class="btn-primary btn-sm">COMPRAR</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conócenos -->
+    <section class="conocenos container hidden">
+        <div class="conocenos-texto">
+            <h2 class="section-title">Conócenos</h2>
+            <p>El Túnel es una cafetería ideal para los amantes de la literatura.</p>
+            <p>Además de su servicio de venta de libros y productos en línea puedes visitar nuestra sucursal y acompañar tu lectura con una taza de café o bebida de tu elección, o bien, disfrutar de los diversos eventos culturales que tenemos para ti.</p>
+            <p>Síguenos en redes sociales y mantente atento a la cartelera de eventos.</p>
+            <p class="slogan">¡Te esperamos!</p>
+        </div>
+        <div class="conocenos-imagen">
+            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=800&auto=format&fit=crop" alt="Interior de la cafetería El Túnel">
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col brand hidden">
+                <h3>El Túnel</h3>
+                <p>Un espacio para los amantes de la literatura. Encuentra la mejor selección de libros, accesorios y un acogedor espacio en la CDMX para leer y tomar un café con tu libro favorito.</p>
+                <p>📍 Av. Álvaro Obregón 86, Roma Nte., CDMX</p>
+                <p>📞 55-00-11-22-33</p>
+            </div>
+            <div class="footer-col links hidden" style="transition-delay: 0.1s;">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de El Túnel</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col subscribe hidden" style="transition-delay: 0.2s;">
+                <h3>Suscríbete</h3>
+                <p>Regístrate para recibir noticias de promociones.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ingresa tu email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2024 © El Túnel. Todos los Derechos Reservados. | Diseñado para Librería</p>
+        </div>
+    </footer>
+
+    <!-- Script de Animaciones al Scroll -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

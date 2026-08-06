@@ -1,0 +1,192 @@
+/* --- Ajuste para el Menú Principal --- */
+.link-intranet {
+    background-color: #5c1813;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* --- Pantalla de Login --- */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f1ea;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* --- Barra Superior Intranet --- */
+.intranet-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+.btn-logout {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* --- Scroll de Noticias (Marquee CSS) --- */
+.noticias-bar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 5%;
+}
+
+.badge-noticia {
+    background-color: #9c2720;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.scroll-noticias {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.scroll-noticias p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* --- Layout del Dashboard --- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.admin-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-top: 4px solid #9c2720;
+}
+
+.mt-20 { margin-top: 20px; }
+
+/* --- Formularios y Botones --- */
+.form-grid input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-secondary {
+    background-color: #5c1813;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* --- Lista de Borrar Libros --- */
+.lista-admin {
+    list-style: none;
+}
+.lista-admin li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* --- Chat Interno --- */
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 500px;
+}
+
+.mensajes-container {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.mensaje {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.recibido {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+}
+
+.enviado {
+    background-color: #c9ad87;
+    color: white;
+    margin-left: auto;
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+}
+.chat-input-area input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
